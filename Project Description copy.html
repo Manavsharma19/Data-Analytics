@@ -1,73 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Author" content="manav.sharma19@outlook.com">
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.5px 15.4px; font: 12.0px Times}
-    p.p2 {margin: 0.0px 0.0px 0.5px 15.4px; font: 12.0px Times; min-height: 14.0px}
-    p.p3 {margin: 0.0px 0.0px 4.5px 29.9px; font: 12.0px Times}
-    p.p4 {margin: 0.0px 0.0px 16.9px 0.0px; font: 12.0px Times}
-    p.p5 {margin: 0.0px 0.0px 0.0px 29.9px; font: 12.0px Times}
-    p.p6 {margin: 0.0px 0.0px 8.8px 14.9px; font: 12.0px Times}
-    p.p7 {margin: 0.0px 0.0px 10.7px 36.0px; font: 12.0px Times}
-    p.p8 {margin: 0.0px 0.0px 0.0px 108.0px; font: 12.0px Times}
-    p.p9 {margin: 0.0px 0.0px 0.0px 25.4px; font: 12.0px Times}
-    p.p10 {margin: 0.0px 0.0px 8.6px 25.4px; font: 12.0px Times}
-    p.p11 {margin: 0.0px 0.0px 10.9px 36.0px; font: 12.0px Times}
-    p.p12 {margin: 0.0px 0.0px 0.0px 72.0px; font: 12.0px Times}
-    p.p13 {margin: 0.0px 0.0px 9.8px 72.0px; font: 12.0px Times}
-    p.p14 {margin: 0.0px 0.0px 8.7px 36.0px; font: 12.0px Times}
-    p.p15 {margin: 0.0px 0.0px 7.8px 72.0px; font: 12.0px Times}
-    p.p16 {margin: 0.0px 0.0px 8.8px 25.4px; font: 12.0px Times}
-    p.p17 {margin: 0.0px 0.0px 7.2px 25.4px; font: 12.0px Times}
-    p.p18 {margin: 0.0px 0.0px 0.0px 15.4px; font: 12.0px Times}
-    p.p19 {margin: 0.0px 0.0px 0.0px 15.4px; font: 12.0px Times; min-height: 14.0px}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
-    span.Apple-tab-span {white-space:pre}
-  </style>
-</head>
 <body>
-<p class="p1">Please complete the project as <i>ONE PYTHON FILE ONLY.</i></p>
-<p class="p2"><i></i><br></p>
-<p class="p3">Dataset Overview</p>
-<p class="p4">For this project we are going to perform a number analytic tasks on the humanDetails.csv file. This dataset contains details about individuals such as their age, salary range, relationship, country and etc.</p>
-<p class="p5">Project Specification</p>
-<p class="p6">The objective of this project is to provide an insight into the underlying pattern of the dataset. Please perform the following tasks:</p>
-<p class="p7"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Task1: For each known county use Work-class and Age to predict Income with the following setting:</p>
-<p class="p8"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Any record associated with an unknown cell in work-class should be removed from the dataset.</p>
-<p class="p8"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.</p>
-<p class="p8"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Income is either less or equal than 50k or greater than 50k.</p>
-<p class="p8"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Cross validation using 5 folds and 20% test size.</p>
-<p class="p9">For each country run decision tree classifier and try different values for the depth of the tree. Pick the depth that produces highest accuracy for test set. And finally pick those countries that their process of learning still suggest overfitting and visualize them using appropriate visualization technique to display the gap between training and test. In this task overfitting occurs if the gap between training and test is more than 20%.</p>
-<p class="p10">Interpret the results.</p>
-<p class="p11"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Task2: Use hours-per-week, Occupation, Age and relationship to predict income. Apply <i>Decision Tree </i>and <i>K Nearest Neighbour </i>classifiers to compare their accuracy (test and training).</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Any unknown cell in the Occupation column should be filled with the Occupation with the highest frequency.</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>One of the values of relationship attribute is <i>Other-relative </i>that needs to be removed from the dataset.</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Some values in hours-per-week attribute mentioned only once. Those values should be removed from the dataset.</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Income attribute should have two unique values.</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Use cross-validation with 5 folds.</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Try different values for the classifiers’ parameters.</p>
-<p class="p13"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Visualize the results and interpret any pattern you find.</p>
-<p class="p10">Interpret the results.</p>
-<p class="p14"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Task3: Use <i>age</i>, <i>fnlwgt</i>, <i>education-num </i>and <i>hours-per-week </i>to train a model with K-Means. Apply the following settings:</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.</p>
-<p class="p15"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Cluster the data into two clusters.</p>
-<p class="p16">Reduce the number of features to two features. Use the first new feature as X coordinate and the second new feature as Y coordinate and visualize them twice using appropriate visualisation technique as follows:</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>The color of each individual in the first visualization is decided based on the value in <i>Income </i>attribute.</p>
-<p class="p12"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>The color of each individual in the second visualization is decided based on the label that is generated by the clustering algorithm.</p>
-<p class="p15"><span class="Apple-tab-span">	</span>•<span class="Apple-tab-span">	</span>Visualize the two plots next to each other.</p>
-<p class="p17">Interpret the results.</p>
-<p class="p18">Note that visualization plots need to have proper labels and annotations.</p>
-<p class="p19"><br></p>
-<p class="p20">Please use the python file template that is provided for you and complete the project in that file. Each task needs to be implemented as a separated function with interpretation as a comment below the function.</p>
-<p class="p20">There should be correct task implementation (model training, accuracy reporting, visualization if needed and etc).<span class="Apple-converted-space"> </span></p>
-<p class="p21"><br></p>
+Please complete the project as ONE PYTHON FILE ONLY.
+
+1.1	Dataset Overview
+For this project we are going to perform a number analytic tasks on the humanDetails.csv file. This dataset contains details about individuals such as their age, salary range, relationship, country and etc.
+1.2	Project Specification
+The objective of this project is to provide an insight into the underlying pattern of the dataset. Please perform the following tasks:
+1.	Task1: For each known county use Work-class and Age to predict Income with the following setting:
+(a)	Any record associated with an unknown cell in work-class should be removed from the dataset.
+(b)	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.
+(c)	Income is either less or equal than 50k or greater than 50k.
+(d)	Cross validation using 5 folds and 20% test size.
+For each country run decision tree classifier and try different values for the depth of the tree. Pick the depth that produces highest accuracy for test set. And finally pick those countries that their process of learning still suggest overfitting and visualize them using appropriate visualization technique to display the gap between training and test. In this task overfitting occurs if the gap between training and test is more than 20%.
+Interpret the results.
+2.	Task2: Use hours-per-week, Occupation, Age and relationship to predict income. Apply Decision Tree and K Nearest Neighbour classifiers to compare their accuracy (test and training).
+(a)	Any unknown cell in the Occupation column should be filled with the Occupation with the highest frequency.
+(b)	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.
+(c)	One of the values of relationship attribute is Other-relative that needs to be removed from the dataset.
+(d)	Some values in hours-per-week attribute mentioned only once. Those values should be removed from the dataset.
+(e)	Income attribute should have two unique values.
+(f)	Use cross-validation with 5 folds.
+(g)	Try different values for the classifiers’ parameters.
+(h)	Visualize the results and interpret any pattern you find.
+Interpret the results.
+3.	Task3: Use age, fnlwgt, education-num and hours-per-week to train a model with K-Means. Apply the following settings:
+(a)	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.
+(b)	Cluster the data into two clusters.
+Reduce the number of features to two features. Use the first new feature as X coordinate and the second new feature as Y coordinate and visualize them twice using appropriate visualisation technique as follows:
+(a)	The color of each individual in the first visualization is decided based on the value in Income attribute.
+(b)	The color of each individual in the second visualization is decided based on the label that is generated by the clustering algorithm.
+(c)	Visualize the two plots next to each other.
+Interpret the results.
+Note that visualization plots need to have proper labels and annotations.
+
+Please use the python file template that is provided for you and complete the project in that file. Each task needs to be implemented as a separated function with interpretation as a comment below the function.
+There should be correct task implementation (model training, accuracy reporting, visualization if needed and etc). 
 </body>
 </html>
