@@ -14,13 +14,6 @@ import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
 from sklearn.cluster import KMeans
 
-"""
-Created on a sunny day
-
-@author: ?????
-@id: ????
-@Cohort: ???
-"""
 
 
 
