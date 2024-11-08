@@ -1,85 +1,48 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Italic;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-{\info
-{\author manav.sharma19@outlook.com}}\margl1836\margr1826\margb2942\margt1935\vieww13440\viewh10200\viewkind0
-\deftab720
-\pard\pardeftab720\li309\sa10\pardirnatural\partightenfactor0
+Please complete the project as ONE PYTHON FILE ONLY.
 
-\f0\fs24 \cf0 Please complete the project as 
-\f1\i ONE PYTHON FILE ONLY.\
-\
-\pard\pardeftab720\li598\sa90\pardirnatural\partightenfactor0
+1.1	Dataset Overview 
+	For this project we are going to perform a number analytic tasks on the humanDetails.csv file. This dataset contains details about individuals such as their age, salary range, relationship, country and etc.
 
-\f0\i0 \cf0 Dataset Overview\
-\pard\pardeftab720\sa338\pardirnatural\partightenfactor0
-\cf0 For this project we are going to perform a number analytic tasks on the humanDetails.csv file. This dataset contains details about individuals such as their age, salary range, relationship, country and etc.\
-\pard\pardeftab720\li598\pardirnatural\partightenfactor0
-\cf0 Project Specification\
-\pard\pardeftab720\li299\sa175\pardirnatural\partightenfactor0
-\cf0 The objective of this project is to provide an insight into the underlying pattern of the dataset. Please perform the following tasks:\
-\pard\pardeftab720\li720\sa213\pardirnatural\partightenfactor0
-\cf0 	\'95	Task1: For each known county use Work-class and Age to predict Income with the following setting:\
-\pard\pardeftab720\li2160\pardirnatural\partightenfactor0
-\cf0 	\'95	Any record associated with an unknown cell in work-class should be removed from the dataset.\
-	\'95	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.\
-	\'95	Income is either less or equal than 50k or greater than 50k.\
-	\'95	Cross validation using 5 folds and 20% test size.\
-\pard\pardeftab720\li508\pardirnatural\partightenfactor0
-\cf0 For each country run decision tree classifier and try different values for the depth of the tree. Pick the depth that produces highest accuracy for test set. And finally pick those countries that their process of learning still suggest overfitting and visualize them using appropriate visualization technique to display the gap between training and test. In this task overfitting occurs if the gap between training and test is more than 20%.\
-\pard\pardeftab720\li508\sa171\pardirnatural\partightenfactor0
-\cf0 Interpret the results.\
-\pard\pardeftab720\li720\sa218\pardirnatural\partightenfactor0
-\cf0 	\'95	Task2: Use hours-per-week, Occupation, Age and relationship to predict income. Apply 
-\f1\i Decision Tree 
-\f0\i0 and 
-\f1\i K Nearest Neighbour 
-\f0\i0 classifiers to compare their accuracy (test and training).\
-\pard\pardeftab720\li1440\pardirnatural\partightenfactor0
-\cf0 	\'95	Any unknown cell in the Occupation column should be filled with the Occupation with the highest frequency.\
-	\'95	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.\
-	\'95	One of the values of relationship attribute is 
-\f1\i Other-relative 
-\f0\i0 that needs to be removed from the dataset.\
-	\'95	Some values in hours-per-week attribute mentioned only once. Those values should be removed from the dataset.\
-	\'95	Income attribute should have two unique values.\
-	\'95	Use cross-validation with 5 folds.\
-	\'95	Try different values for the classifiers\'92 parameters.\
-\pard\pardeftab720\li1440\sa195\pardirnatural\partightenfactor0
-\cf0 	\'95	Visualize the results and interpret any pattern you find.\
-\pard\pardeftab720\li508\sa171\pardirnatural\partightenfactor0
-\cf0 Interpret the results.\
-\pard\pardeftab720\li720\sa173\pardirnatural\partightenfactor0
-\cf0 	\'95	Task3: Use 
-\f1\i age
-\f0\i0 , 
-\f1\i fnlwgt
-\f0\i0 , 
-\f1\i education-num 
-\f0\i0 and 
-\f1\i hours-per-week 
-\f0\i0 to train a model with K-Means. Apply the following settings:\
-\pard\pardeftab720\li1440\pardirnatural\partightenfactor0
-\cf0 	\'95	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.\
-\pard\pardeftab720\li1440\sa155\pardirnatural\partightenfactor0
-\cf0 	\'95	Cluster the data into two clusters.\
-\pard\pardeftab720\li508\sa175\pardirnatural\partightenfactor0
-\cf0 Reduce the number of features to two features. Use the first new feature as X coordinate and the second new feature as Y coordinate and visualize them twice using appropriate visualisation technique as follows:\
-\pard\pardeftab720\li1440\pardirnatural\partightenfactor0
-\cf0 	\'95	The color of each individual in the first visualization is decided based on the value in 
-\f1\i Income 
-\f0\i0 attribute.\
-	\'95	The color of each individual in the second visualization is decided based on the label that is generated by the clustering algorithm.\
-\pard\pardeftab720\li1440\sa155\pardirnatural\partightenfactor0
-\cf0 	\'95	Visualize the two plots next to each other.\
-\pard\pardeftab720\li508\sa145\pardirnatural\partightenfactor0
-\cf0 Interpret the results.\
-\pard\pardeftab720\li309\pardirnatural\partightenfactor0
-\cf0 Note that visualization plots need to have proper labels and annotations.\
-\
-\pard\pardeftab720\pardirnatural\partightenfactor0
-\cf0 Please use the python file template that is provided for you and complete the project in that file. Each task needs to be implemented as a separated function with interpretation as a comment below the function.\
-There should be correct task implementation (model training, accuracy reporting, visualization if needed and etc). \
-\
-}
+1.2	Project Specification
+	The objective of this project is to provide an insight into the underlying pattern of the dataset. Please perform the following tasks:
+
+1.	Task1: For each known county use Work-class and Age to predict Income with the following setting:
+
+(a)	Any record associated with an unknown cell in work-class should be removed from the dataset.
+(b)	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.
+(c)	Income is either less or equal than 50k or greater than 50k.
+(d)	Cross validation using 5 folds and 20% test size.
+
+For each country run decision tree classifier and try different values for the depth of the tree. Pick the depth that produces highest accuracy for test set. And finally pick those countries that their process of learning still suggest overfitting and visualize them using appropriate visualization technique to display the gap between training and test. In this task overfitting occurs if the gap between training and test is more than 20%.
+Interpret the results.
+
+2.	Task2: Use hours-per-week, Occupation, Age and relationship to predict income. Apply Decision Tree and K Nearest Neighbour classifiers to compare their accuracy (test and training).
+
+(a)	Any unknown cell in the Occupation column should be filled with the Occupation with the highest frequency.
+(b)	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.
+(c)	One of the values of relationship attribute is Other-relative that needs to be removed from the dataset.
+(d)	Some values in hours-per-week attribute mentioned only once. Those values should be removed from the dataset.
+(e)	Income attribute should have two unique values.
+(f)	Use cross-validation with 5 folds.
+(g)	Try different values for the classifiers’ parameters.
+(h)	Visualize the results and interpret any pattern you find.
+
+Interpret the results.
+
+3.	Task3: Use age, fnlwgt, education-num and hours-per-week to train a model with K-Means. Apply the following settings:
+
+(a)	Some values in Age columns are represented as decade, e.g., 20s or 30s. You are required to clean these values by removing the s and convert it into an integer value.
+(b)	Cluster the data into two clusters.
+
+Reduce the number of features to two features. Use the first new feature as X coordinate and the second new feature as Y coordinate and visualize them twice using appropriate visualisation technique as follows:
+(a)	The color of each individual in the first visualization is decided based on the value in Income attribute.
+(b)	The color of each individual in the second visualization is decided based on the label that is generated by the clustering algorithm.
+(c)	Visualize the two plots next to each other.
+
+Interpret the results.
+
+Note that visualization plots need to have proper labels and annotations.
+
+Please use the python file template that is provided for you and complete the project in that file. Each task needs to be implemented as a separated function with interpretation as a comment below the function.
+There should be correct task implementation (model training, accuracy reporting, visualization if needed and etc). 
+
